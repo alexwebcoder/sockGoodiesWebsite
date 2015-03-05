@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Fun | Novelty Socks | Subscription Service | Sock Goodies.com</title>
+		<meta name = "description" content = "Sock Goodies subscription page.">
+		<meta name = "keywords" content = "novelty socks, cool socks">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<link rel = "stylesheet" type = "text/css" href = "cssFilesA.css" media = "all">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type = "text/javascript" src = "sockGoodies.js"></script>
+	</head>
+
+	<body>
+		<div id = "wrapper" class = "clearfix">
+		
+		<!--Mobile Menu displays at 480 px -->    
+		
+			<div id = "smallMenu">
+				<a href = "http://www.sockgoodies.com/"><img src = "http://www.sockgoodies.com/compLogoA.png" alt = "Sock Goodies Logo"></a>
+				<p class = "headline">
+					<strong>Sock Goodies</strong><br>
+					Novelty Sock and Candy Subscription Service
+				</p>
+
+				<ul>
+					<li><a href = "http://www.sockgoodies.com/">Home</a></li>
+					<li><a href = "http://www.sockgoodies.com/aboutUs.html">About</a></li>
+					<li><a href = "http://www.sockgoodies.com/faq.html">Faq</a></li>
+					<li><a href = "http://www.sockgoodies.com/myAccount.html">LogIn</a></li>
+					<li><a href = "http://www.sockgoodies.com/privacy_policy.html">Privacy</a></li>
+					<li><a href = "http://www.sockgoodies.com/terms_conditions.html">Terms</a></li>
+					<li><a href = "http://www.sockgoodies.com/contactUs.html">Contact</a></li>
+				</ul>
+
+				<div class = "handle clearfix">
+					<p>Menu</p>
+					<p><span>&#9776;</span></p>
+				</div>
+			</div>
+			
+		<!-- Mobile Menu ends here --> 
+
+			<header class = "clearfix">
+				<a href = "http://www.sockgoodies.com/"><img src = "http://www.sockgoodies.com/compLogo.png" width = "166" height = "145" alt = "Sock Goodies Logo"></a>
+				<p>
+					<strong>Sock Goodies</strong><br>
+					Novelty Sock and Candy Subscription Service
+				</p>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a class = "home" href = "http://www.sockgoodies.com">Home</a></li>
+					<li><a class = "about" href = "http://www.sockgoodies.com/aboutUs.html">About</a></li>                             
+					<li><a class = "faq" href = "http://www.sockgoodies.com/faq.html">Faq</a></li>                               
+					<li><a class = "logIn" href = "http://www.sockgoodies.com/myAccount.html">LogIn</a></li>         
+					<li><a class = "subscribe" id = "onSubscribe">Subscribe</a></li>                              
+				</ul>
+			</nav>
+
+			<section class = "subscribe"><!-- Decided against h tags in the section and article. Page validates with 2 warnings due to no h tags, otherwise no errors-->
+			  
+				<article class = "subscribeContent">
+					<div class = "triangle"></div>
+					<div class = "triangleRight"></div>                                                                  
+                                                                                      
+					<div class = "subscribeRules"> 
+						<br><br>
+						<p>
+							<strong>You get 1 pair of socks and candy each month</strong>
+						</p>
+						
+						<p>
+							You are charged the day you sign up.
+						</p>
+						
+						<p>
+							After that, your card will be charged automatically once a month.
+						</p>
+						
+						<p>
+							The amount is <mark>$12.50 per month</mark> and you can cancel anytime. 
+						</p>	
+						
+						<p>
+							Subscriptions made between the 1st and 15th of the month will ship on the 16th.
+						</p>
+						
+						<p>
+							Subscriptions made between the 16th and 31st of the month will ship on the 1st.
+						</p>
+
+						<p>
+							Ships to US only
+						</p>
+						
+						<p>
+							Men's socks fit shoe sizes 6 to 12.
+						</p>							
+	
+						<p>
+							Women's socks fit shoe sizes 4 to 11.
+						</p>
+						
+						<p>
+							All Plans are $12.50!
+						</p>	
+						
+						<p>
+							<strong>Select a Plan Below!</strong>
+						</p>	
+						
+						<div>	
+							<form method = "post" action = "https://pay1.plugnpay.com/payment/pay.cgi">
+								<input type = "hidden" name = "shipinfo" value = "1">
+								<input type = "hidden" name = "publisher-email" value = "iloveyoursocks@sockgoodies.com">
+								<input type = "hidden" name = "publisher-name" value = "stayup">
+								<input type = "hidden" name = "order-id" value = "Sock Goodies Membership">
+								<input type = "hidden" name = "card-allowed" value = "Visa,Mastercard,Discover">
+								<input type = "hidden" name = "easycart" value = "1">
+								<input type = "hidden" name = "subject" value = "Sock Goodies Membership Receipt">
+								<input type = "hidden" name = "currency_symbol" value = "$">
+								<input type = "hidden" name = "plan1" value = "1">
+								<input type = "hidden" name = "item1" value = "Men&#39;s Socks M">
+								<input type = "hidden" name = "description1" value = "Men&#39;s Socks for myself">
+								<input type = "hidden" name = "cost1" value = "12.50">
+								<input type = "hidden" name = "plan2" value = "2">
+								<input type = "hidden" name = "item2" value = "Women&#39;s Socks M">
+								<input type = "hidden" name = "description2" value = "Women&#39;s Socks for myself">
+								<input type = "hidden" name = "cost2" value = "12.50">
+								<input type = "hidden" name = "plan3" value = "3">
+								<input type = "hidden" name = "item3" value = "Men&#39;s Socks G">
+								<input type = "hidden" name = "description3" value = "Men&#39;s Socks as a gift for someone">
+								<input type = "hidden" name = "cost3" value = "12.50">
+								<input type = "hidden" name = "plan4" value = "4">
+								<input type = "hidden" name = "item4" value = "Women&#39;s Socks G">
+								<input type = "hidden" name = "description4" value = "Women&#39;s Socks as a gift for someone">
+								<input type = "hidden" name = "cost4" value = "12.50">
+							
+								<div>
+									 <ul class = "form">
+											<li>
+												<input type = "radio" name = "roption" value = "1" checked = "">I want Men's Socks for myself
+											</li>
+											
+											<li>
+												<input type = "radio" name = "roption" value = "2">I want  Women's Socks for myself
+											</li>
+											
+											<li>
+											  <input type = "radio" name="roption" value = "3">I want Men's Socks as a gift for someone else
+											</li>
+											
+											<li>
+											  <input type = "radio" name = "roption" value = "4">I want Women's Socks as a gift  for someone else
+											</li>
+									  </ul> 
+			  
+									  <input type = "hidden" name = "taxrate" value = "0.09"> 
+									  <input type = "hidden" name = "taxstate" value = "CA">
+									  <p>
+										 <input type = "submit" name = "return" value = "Make Secure Payment">
+									  </p>
+								</div>
+							</form>
+						</div>					
+					
+
+						<p>
+						  Satisfaction Guaranteed!
+						</p>
+
+						<p>
+						  If these are a gift, input the name and address of the person you want to ship these to in the shipping address field on the next page.
+						</p>
+						
+						<p>
+						  Earn a free month for every 2 friends that you get to sign up.
+						</p>
+						
+					</div>	
+					
+				</article>  
+
+				<div class = "credit">
+					<p>&#169; Copyright 2015 SockGoodies, Alex DeLeon</p>
+				</div>
+				
+				<footer>
+					<ul>
+						<li><a href = "http://www.sockgoodies.com/privacy_policy.html">Privacy Policy</a></li>
+						<li><a href = "http://www.sockgoodies.com/terms_conditions.html">Terms and Conditions</a></li>
+						<li><a href = "http://www.sockgoodies.com/contactUs.html">Contact</a></li>
+					</ul>
+				
+					<p>
+					  &#169; Copyright 2015 SockGoodies, Alex DeLeon
+					</p>
+				</footer>                                        
+			</section>                    
+		</div>
+	</body>
+</html>

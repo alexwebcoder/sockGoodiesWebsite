@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<head>
+		<meta charset = "utf-8">
+		<title>Sock Goodies</title>
+		<meta name = "description" content = "Sock Goodies delivers fun men's and women's novelty socks and candy each month.">
+		<meta name = "keywords" content = "novelty socks, cool socks">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<link rel = "stylesheet" type = "text/css" href = "cssFilesA.css" media = "all">
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script type = "text/javascript" src = "sockGoodies.js"></script>
+	</head>
+
+	<body>
+		<div id = "wrapper" class = "clearfix">
+		
+        <!--Mobile Menu displays at 480 px -->    
+		
+			<div id = "smallMenu">
+				<a href = "http://www.sockgoodies.com/"><img src = "http://www.sockgoodies.com/compLogoA.png" alt = "Sock Goodies Logo"></a>
+				<p class = "headline">
+					<strong>Sock Goodies</strong><br>
+					Novelty Sock and Candy Subscription Service
+				</p>
+
+				<ul>
+					<li><a href = "http://www.sockgoodies.com/">Home</a></li>
+					<li><a href = "http://www.sockgoodies.com/aboutUs.html">About</a></li>
+					<li><a href = "http://www.sockgoodies.com/faq.html">Faq</a></li>
+					<li><a href = "http://www.sockgoodies.com/orderpage.html">Subscribe</a></li>
+					<li><a href = "http://www.sockgoodies.com/privacy_policy.html">Privacy</a></li>
+					<li><a href = "http://www.sockgoodies.com/terms_conditions.html">Terms</a></li>
+					<li><a href = "http://www.sockgoodies.com/contactUs.html">Contact</a></li>
+				</ul>
+
+				<div class = "handle clearfix">
+					<p>Menu</p>
+					<p><span>&#9776;</span></p>
+				</div>
+			</div>
+			
+		<!-- Mobile Menu ends here --> 
+
+			<header class = "clearfix">
+				<a href = "http://www.sockgoodies.com/"><img src = "http://www.sockgoodies.com/compLogo.png" width = "166" height = "145" alt = "Sock Goodies Logo"></a>
+				<p>
+					<strong>Sock Goodies</strong><br>
+					Novelty Sock and Candy Subscription Service
+				</p>
+			</header>
+
+			<nav>
+				<ul>
+					<li><a class = "home" href = "http://www.sockgoodies.com">Home</a></li>
+					<li><a class = "about" href="http://www.sockgoodies.com/aboutUs.html">About</a></li>                             
+					<li><a class = "faq" href = "http://www.sockgoodies.com/faq.html">Faq</a></li>                               
+					<li><a class = "logIn" id = "onLogin">LogIn</a></li>         
+					<li><a class = "subscribe" href = "http://www.sockgoodies.com/orderpage.html">Subscribe</a></li>                              
+				</ul>
+			</nav>
+
+			<section class = "logIn"><!-- Decided against h tags in the section and article. Page validates with 2 warnings due to no h tags, otherwise no errors-->
+			  
+				<article class = "logInContent">
+					<div class = "triangle"></div>
+					<div class = "triangleRight"></div>                                                                  
+                                                                                      
+					<div class = "loginRules"> 
+
+						<p>
+							If you have forgotten your username and/or password and would like a copy emailed to you, please enter your email address in the space provided and click on the "Submit Request" Button below.
+						</p>
+						
+						<form method = "post" action = "https://pay1.plugnpay.com/payment/recurring/attendant.cgi" target = "results">
+							<p>Email Address:
+								<input class = "email" type = "text" name = "email" size = "30">
+								<input type = "hidden" name = "from-email" value = "iloveyoursocks@sockgoodies.com">
+								<input type = "hidden" name = "email-message" value = "Thanks for subscribing. Here is your new password">
+								<input type = "hidden" name = "site" value = "Sock Goodies">
+								<input type = "hidden" name = "mode" value = "remind">
+								<input type = "hidden" name = "publisher-name" value = "stayup">
+							</p>
+							
+							<p>
+								<input name = "submit" type = "submit" onclick = "results();" value = "Submit Request">
+							</p>
+						</form>
+						
+						<p>
+							If you would like to cancel your account, please enter your username and password in the space provided and click  on the "Cancel Membership" Button below.<br>
+							To pause your subscription, please email us at iloveyoursocks (at) sockgoodies.com
+						</p>
+						
+						<form method = "post" action = "https://pay1.plugnpay.com/payment/recurring/attendant.cgi" target = "results">
+							<p>
+								Username:
+								<input type = "text" name = "username" size = "15">
+								<br>
+								Password:  
+								<input type = "password" name = "password" size = "15">
+								<input type = "hidden" name = "publisher-email" value = "iloveyoursocks@sockgoodies.com">
+								<input type = "hidden" name = "from-email" value = "iloveyoursocks@sockgoodies.com">
+								<input type = "hidden" name = "email-message" value = "Thank you for subscribing to SockGoodies.com. We hope that you enjoyed your subscription.">
+								<input type = "hidden" name = "site" value = "Sock Goodies">
+								<input type = "hidden" name = "mode" value = "cancel">
+								<input type = "hidden" name = "publisher-name" value = "stayup">
+							</p>
+							
+							<p>
+								<input name="submit" type="submit" onclick="results();" value="Cancel Membership">
+							</p>
+						</form>
+						
+						<p>
+							If you would like to edit your account information, please enter your username and password in the space provided and click on the "Edit Account Information" Button below.
+						</p>
+						
+						<form method = "post" action = "https://pay1.plugnpay.com/payment/recurring/attendant.cgi" target = "results">
+							<p>
+								Username:
+								<input type = "text" name = "username" size = "15">
+								<br>
+								Password:
+								<input type = "password" name = "password" size = "15">
+								<input type = "hidden" name = "mode" value = "edit">
+								<input type = "hidden" name = "publisher-name" value = "stayup">
+							</p>
+							
+							<p>
+								<input name = "submit" type = "submit" onclick = "results();" value = "Edit Account Information">
+							</p>
+						</form>
+						
+					</div>    
+				</article>  
+
+				<div class = "credit">
+					<p>&#169; Copyright 2015 SockGoodies, Alex DeLeon</p>
+				</div>
+				
+				<footer>
+					<ul>
+						<li><a href = "http://www.sockgoodies.com/privacy_policy.html">Privacy Policy</a></li>
+						<li><a href = "http://www.sockgoodies.com/terms_conditions.html">Terms and Conditions</a></li>
+						<li><a href = "http://www.sockgoodies.com/contactUs.html">Contact</a></li>
+					</ul>
+                
+					<p>
+						&#169; Copyright 2015 SockGoodies, Alex DeLeon
+					</p>
+				</footer>                                         
+			</section>                    
+		</div>
+	</body>
+</html>
