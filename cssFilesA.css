@@ -482,6 +482,7 @@ div.credit > p {
 #smallMenu a {
 
 	color:inherit;
+	display:block;
 	text-decoration:none;           
 }
 
